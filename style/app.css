@@ -1,0 +1,95 @@
+/* Global Styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #2196f3; /* Blue color */
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 90px);
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+
+#list {
+    background-color: #e3f2fd; /* Light blue color */
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form {
+    background-color: #fff3e0; /* Light orange color */
+    flex: 2;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styles */
+
+a {
+    text-decoration: none;
+    color: #2196f3; /* Blue color */
+}
+
+a:hover {
+    color: #0d47a1; /* Darker blue color */
+}
+
+/* Form Styles */
+
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff9800; /* Orange color */
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #ff9800; /* Orange color */
+    border-color: #ff9800;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f57c00; /* Darker orange color */
+    border-color: #f57c00;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+    #list, #form {
+        flex: 1;
+    }
+    #list {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
